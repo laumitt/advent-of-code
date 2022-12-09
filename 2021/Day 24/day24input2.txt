@@ -1,0 +1,50 @@
+w = mod_no[0]
+x = x * 0
+x = x + z
+x = x % 26
+z = z / 1
+x = x + 14
+if x == w, x = 1
+if x == 0, x = 1
+y = y * 0
+y = y + 25
+y = y * x
+y = y + 1
+z = z * y
+y = y * 0
+y = y + w
+y = y + 8
+y = y * x
+z = z + y
+w = mod_no[1]
+x = x * 0
+x = x + z
+x = x % 26
+z = z / 1
+x = x + 15
+if x == w, x = 1
+if x == 0, x = 1
+y = y * 0
+y = y + 25
+y = y * x
+y = y + 1
+z = z * y
+w = mod_no[2]
+x = x * 0
+x = x + z
+x = x % 26
+z = z / 1
+x = x + 13
+if x == w, x = 1
+if x == 0, x = 1
+y = y * 0
+y = y + 25
+y = y * x
+y = y + 1
+z = z * y
+y = y * 0
+y = y + w
+y = y + 2
+y = y * x
+z = z + y
+w = mod_no[3]
