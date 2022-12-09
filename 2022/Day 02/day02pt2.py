@@ -1,4 +1,4 @@
-day = '2'
+day = '02'
 test = 0
 if test == 1:
     with open('Day ' + day + '/day'+ day + 'input_test.txt') as f:

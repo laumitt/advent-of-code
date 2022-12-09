@@ -1,4 +1,4 @@
-day = '9'
+day = '0'
 test = 1
 if test == 1:
     with open('day'+ day + 'input_test.txt') as f:
@@ -12,5 +12,4 @@ else:
 input = []
 for a in range(len(lines)):
     input.append(lines[a].strip())
-
 print(input)

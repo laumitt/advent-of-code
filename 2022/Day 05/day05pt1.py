@@ -1,6 +1,6 @@
 import re
 
-day = '5'
+day = '05'
 test = 0
 if test == 1:
     with open('Day ' + day + '/day'+ day + 'input_test.txt') as f:

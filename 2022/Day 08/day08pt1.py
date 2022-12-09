@@ -1,6 +1,6 @@
 import numpy as np
 
-day = '8'
+day = '08'
 test = 0
 if test == 1:
     with open('Day ' + day + '/day'+ day + 'input_test.txt') as f:
@@ -32,25 +32,14 @@ print(trees.shape)
 visible = trees.shape[0]*4-4
 print(visible)
 
-insidedim = trees.shape[0]-2
-for i in range(insidedim):
-    y = i+1
-    for j in range(insidedim):
-        x = j+1
+for y in range(1, trees.shape[0]-1):
+    for x in range(1, trees.shape[0]-1):
         current = trees[y, x]
-        # print("coordinates", x, y)
-        above = trees[:x, y]
-        below = trees[x+1:, y]
-        left = trees[x, :y]
-        right = trees[x, y+1:]
-        print("a", len(above))
-        print("b", len(below))
-        print(len(above) + len(below))
-        print("l", len(left))
-        print("r", len(right))
-        print(len(left) + len(right))
+        above = trees[:y, x]
+        below = trees[y+1:, x]
+        left = trees[y, :x]
+        right = trees[y, x+1:]
         if max(above) < current or max(below) < current or max(left) < current or max(right) < current:
             visible += 1
-            print(x, y, current)
 
 print(visible)

@@ -1,4 +1,4 @@
-day = '6'
+day = '06'
 test = 0
 if test == 1:
     with open('Day ' + day + '/day'+ day + 'input_test.txt') as f:
@@ -17,9 +17,9 @@ input = list(input[0])
 print(input)
 
 for pos in range(len(input)):
-    if pos > 3:
-        lastfour = input[pos-4:pos]
+    if pos > 13:
+        lastfour = input[pos-14:pos]
         print(lastfour)
-        if len(set(lastfour)) == 4:
+        if len(set(lastfour)) == 14:
             print("ANS", pos)
             break

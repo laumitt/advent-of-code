@@ -1,5 +1,5 @@
 import copy
-day = '1'
+day = '01'
 test = 0
 if test == 1:
     with open('Day ' + day + '/day'+ day + 'input_test.txt') as f:
